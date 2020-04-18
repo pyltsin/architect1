@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+spec:
+  containers:
+    - name: my-container
+      image: pyltsin/otus:1
+      ports:
+        - containerPort: 8000
+          protocol: TCP
